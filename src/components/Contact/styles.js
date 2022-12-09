@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  max-width: 100vw;
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  height: 100vh;
+  max-width: 100vw;
   align-items:center;
+  justify-content: center;
   >section {
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     >h1 {
-      color: var(--terciary);
-      margin-right: 0.2ch;
       font-size: 2.82em;
+      margin-right: 0.2ch;
+      color: var(--terciary);
       >span {
         color: var(--secundary);
       }
@@ -25,54 +25,76 @@ const Container = styled.div`
     width: 60%;
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    border: 2px solid green;
+
     >form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
       width: 90%;
       height: 50%;
-      input {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      border: 2px solid black;
+      >input {
         width: 55%;
         height: 40px;
+        padding: 1ch;
         border-radius: 5px;
         margin-bottom: 1ch;
-        padding: 1ch;
         outline-style: none;
       }
-      textarea {
+      >textarea {
         width: 55%;
         height: 30%;
+        padding: 1ch;
+        resize: none;
         border-radius: 5px;
         margin-bottom: 1ch;
-        padding: 1ch;
         outline-style: none;
       }
-      button {
+      >button {
         width: 55%;
-        border-radius: 5px;
         height: 40px;
-        background: var(--terciary);
-        color: var(--secundary);
-        text-align: center;
-        font-weight: 500;
         transition: 0.5s;
+        font-weight: 500;
+        border-radius: 5px;
+        text-align: center;
         letter-spacing: 2px;
+        color: var(--secundary);
+        background: var(--terciary);
       }
-      button:hover {
+      >button:not([disabled]):hover {
         background-color: var(--letters);
         cursor: pointer;
       }
-      button:disabled {
+      >button:disabled {
         opacity: 0.7;
         cursor: not-allowed;
       }
     }
-    a {
-      margin: 5px;
+    nav {
+      width: 50%;
+      height: 8%;
+      display flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 2px red;
+      >a {
+        margin: 5px;
+        border: 2px solid blue;
+        /* width: 100%; */
+        img {
+          width: 100%;
+          height: 100;
+        }
+      }
+      >a img:hover {
+        transition: 0.7s;
+        transform: scale(1.1);
+      }
     }
 
   }
@@ -91,11 +113,11 @@ const Container = styled.div`
       width: 100%;
       height: 100%;
       form {
-        width: 80%;
+        width: 100%;
         height: 80%;
         display: flex;
-        flex-direction: column;
         margin-top: -60px;
+        flex-direction: column;
         input {
           width: 80%;
         }
@@ -104,10 +126,13 @@ const Container = styled.div`
         }
       }
       nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          width: 100%;
+        }
       }
     }
   }
