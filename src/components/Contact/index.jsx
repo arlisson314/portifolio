@@ -46,7 +46,7 @@ function Contact() {
         </h1>
       </section>
       <main>
-        <form>
+        <form onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
@@ -54,6 +54,7 @@ function Contact() {
             onChange={({ target }) => setName(target.value)}
             value={name}
             placeholder="Deigite seu nome"
+            required
           />
           <input
             type="email"
@@ -62,17 +63,19 @@ function Contact() {
             onChange={({ target }) => setEmail(target.value)}
             value={email}
             placeholder="Deigite seu E-mail"
+            required
           />
           <textarea
-            rows="4"
-            cols="33"
+            rows={4}
+            cols={33}
+            maxLength={500}
             onChange={({ target }) => setMessage(target.value)}
             value={message}
             placeholder="Digite sua menagem..."
+            required
           />
           <button
             type="submit"
-            onClick={sendEmail}
             disabled={desable}
           >
             Enviar email
