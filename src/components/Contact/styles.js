@@ -28,8 +28,6 @@ const Container = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid green;
-
     >form {
       width: 90%;
       height: 50%;
@@ -37,7 +35,6 @@ const Container = styled.div`
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      border: 2px solid black;
       >input {
         width: 55%;
         height: 40px;
@@ -81,11 +78,8 @@ const Container = styled.div`
       display flex;
       justify-content: center;
       align-items: center;
-      border: solid 2px red;
       >a {
         margin: 5px;
-        border: 2px solid blue;
-        /* width: 100%; */
         img {
           width: 100%;
           height: 100;
