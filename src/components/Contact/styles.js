@@ -118,7 +118,6 @@ const Container = styled.div`
       >div {
         width: 80%;
         height: 35%;
-        border: solid 1px red;
         h3 {
           font-size: 0.8em;
         }
@@ -138,6 +137,7 @@ const Container = styled.div`
         }
         textarea {
           width: 80%;
+          height: 32%;
         }
       }
       nav {
