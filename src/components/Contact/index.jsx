@@ -44,6 +44,26 @@ function Contact() {
           Contact
           <span> Me</span>
         </h1>
+
+        <div>
+          <h3>
+            Name:
+            <span> Arlisson Nascimento Costa</span>
+          </h3>
+          <h3>
+            Address:
+            <span> São Luis Ma</span>
+          </h3>
+          <h3>
+            Email:
+            <span> arlisson314@gmail.com</span>
+          </h3>
+          <h3>
+            Telefone:
+            <span> (98) 99123-6814</span>
+          </h3>
+        </div>
+
       </section>
       <main>
         <form onSubmit={sendEmail}>

@@ -10,22 +10,26 @@ function About() {
           <span> Me</span>
         </h1>
         <article>
-          I&apos;m currently studying web development at Trybe.
-          Soon I will be a full stack developer.asdiefhnafpnesafnadfienaksfnuinfkjenf as
-          dfjeisfhnjkdfhuiehsarfndkfhe
-          fdkefuishfjesçafduifen
-          afdlkje9oasifhjealsnfmdjsfiohneaf
-          ldfienfpl,iudufejmnfnlkdsaiofje
+          <p>
+            I&apos;m currently studying web development at Trybe.
+            Soon I will be a full stack developer.asdiefhnafpnesafnadfienaksfnuinfkjenf as
+            dfjeisfhnjkdfhuiehsarfndkfhe
+            fdkefuishfjesçafduifen
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+            afdlkje9oasifhjealsnfmdjsfiohneaf
+          </p>
         </article>
       </section>
-      <main>
+      {/* <main>
         <h3>
           Name:
           <span> Arlisson Nascimento Costa</span>
-        </h3>
-        <h3>
-          Age:
-          <span> 30</span>
         </h3>
         <h3>
           Address:
@@ -35,7 +39,11 @@ function About() {
           Email:
           <span> arlisson314@gmail.com</span>
         </h3>
-      </main>
+        <h3>
+          Telefone:
+          <span> (98) 99123-6814</span>
+        </h3>
+      </main> */}
     </Container>
   );
 }
