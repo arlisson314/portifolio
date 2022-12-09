@@ -7,9 +7,10 @@ const Container = styled.div`
   align-items:center;
   justify-content: center;
   >section {
-    width: 40%;
-    height: 100%;
+    width: 35%;
+    height: 30%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     >h1 {
@@ -20,24 +21,35 @@ const Container = styled.div`
         color: var(--secundary);
       }
     }
+    >div {
+      width: 55%;
+      height: 45%;
+      margin-top: 0.2em; 
+      >h3 {
+        color: var(--terciary);
+        >span {
+          color: var(--secundary);
+        }
+      }
+    }
   }
   >main {
     width: 60%;
-    height: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     >form {
       width: 90%;
-      height: 50%;
+      height: 100%;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
       >input {
         width: 55%;
-        height: 40px;
+        height: 45px;
         padding: 1ch;
         border-radius: 5px;
         margin-bottom: 1ch;
@@ -96,19 +108,27 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    max-height: 100%;
     section {
-      width: 100%;
-      height: 20%;
+      width: 90%;
+      height: 40%;
       h1 {
-        margin-top: 2em;
+        margin-top: 1.5em;
+      }
+      >div {
+        width: 100%;
+        height: 35%;
+        h3 {
+          font-size: 0.8em;
+        }
       }
     }
     main {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 80%;
       form {
         width: 100%;
-        height: 80%;
+        height: 90%;
         display: flex;
         margin-top: -60px;
         flex-direction: column;
@@ -121,6 +141,10 @@ const Container = styled.div`
       }
       nav {
         width: 90%;
+        margin-top: -3em;
+        a img {
+          height: 30px;
+        }
       }
     }
   }

@@ -68,6 +68,9 @@ const Container = styled.div`
         margin: 5px;
         flex-direction: column;
       }
+      div:hover {
+        transform: none;
+      }
     }
   }
 
