@@ -116,8 +116,9 @@ const Container = styled.div`
         margin-top: 1.5em;
       }
       >div {
-        width: 100%;
+        width: 80%;
         height: 35%;
+        border: solid 1px red;
         h3 {
           font-size: 0.8em;
         }
@@ -128,7 +129,7 @@ const Container = styled.div`
       height: 80%;
       form {
         width: 100%;
-        height: 90%;
+        height: 95%;
         display: flex;
         margin-top: -60px;
         flex-direction: column;
