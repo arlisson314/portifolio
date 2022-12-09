@@ -79,10 +79,11 @@ const Container = styled.div`
       justify-content: center;
       align-items: center;
       >a {
-        margin: 5px;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
         img {
           width: 100%;
-          height: 100;
         }
       }
       >a img:hover {
@@ -95,12 +96,11 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-
     section {
       width: 100%;
-      height: 30%;
+      height: 20%;
       h1 {
-        margin-top: 1.4em;
+        margin-top: 2em;
       }
     }
     main {
@@ -120,13 +120,7 @@ const Container = styled.div`
         }
       }
       nav {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a {
-          width: 100%;
-        }
+        width: 90%;
       }
     }
   }

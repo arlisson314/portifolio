@@ -109,7 +109,7 @@ function Contact() {
             rel="noreferrer"
           >
             <img
-              src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+              src="https://img.shields.io/badge/-GitHub-0D1117?style=for-the-badge&logo=github&labelColor=0D1117"
               alt="github"
             />
           </a>
