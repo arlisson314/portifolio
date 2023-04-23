@@ -28,10 +28,11 @@ export default createGlobalStyle`
 
   :root {
     /* --primary: aliceBlue; */
-    --primary: rgb(135, 135, 136);
-    --secundary: #0d1525d3;
-    --terciary: #fca311;
-    --letters: #e5e5e5;
-    --white: #fff;
+    /* --primary: rgb(135, 135, 136);*/
+    /* --secundary: #0d1525d3; */
+    /* --terciary: #fca311; */
+    /* --letters: #e5e5e5;  */
+    --primary: #fff;
+    --colorHover: #44a4fc;
   }
 `;
