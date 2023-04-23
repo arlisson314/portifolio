@@ -3,23 +3,18 @@ import styled from 'styled-components';
 const Container = styled.div`
   a {
     cursor: pointer;
-    font-size: 20px;
-    border-radius: 2px;
-    color: var(--letters);
-    display: flex;
-    justify-content: center;
-    height: 44px;
+    transition: ease-in-out .4s;
+    justify-content: flex-end;
     align-items: center;
-    margin: 1ch;
+    font-size: 20px;
+    display: flex;
     p {
-      margin-left: 5px;
+      margin-left: 0.4ch;
     }
   }
 
-
   &:hover {
-    background-color: var(--terciary);
-    color: var(--secundary);
+    color: var(--colorHover);
   }
 `;
 export default Container;
