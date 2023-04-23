@@ -13,7 +13,9 @@ function Header() {
 
   return (
     <Container>
-      <FaBars onClick={renderSiderbar} />
+      <h3>Arlisson.dev</h3>
+
+      <FaBars size={25} onClick={renderSiderbar} />
       {sidebar && <Sidebar renderSiderbar={renderSiderbar} />}
 
       <Content>
