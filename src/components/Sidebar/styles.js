@@ -1,27 +1,31 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  z-index: 1;
-  background-color: var(--secundary);
-  position: fixed;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  width: 300px;
   left: ${(props) => (props.sidebar ? 'auto' : '-100%')};
+  background-color: var(--primary);
   animation: showSidebar .4s;
-
-
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  
   > svg {
-    position: fixed;
-    fill: var(--letters);
-    width: 30px;
-    height: 30px;
+    margin-left: 93%;
     margin-top: 20px;
-    margin-left: 20px;
+    position: fixed;
     cursor: pointer;
+    height: 30px;
+    width: 30px;
+    &:hover {
+      color: var(--colorHover);
+    }
   }
-
+/* 900 = 93  700 = 90* 400 = */
   @keyframes showSidebar {
     from {
       opacity: 0;
@@ -29,7 +33,13 @@ export const Container = styled.div`
     }
     to {
       opacity: 1;
-      width: 300px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    >svg {
+      margin-left: 85%;
     }
   }
 `;
