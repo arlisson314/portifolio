@@ -1,53 +1,54 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 70px;
-  display: flex;
-  background-color: var(--secundary); 
-  box-shadow: 0 0 20px 0;
+  box-shadow:  10px 0px 10px #777777, -10px -10px 10px #ffffff;
+  background-color: var(--primary); 
+  justify-content: space-evenly;
+  align-items: center;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  display: flex;
+  height: 70px;
   z-index: 999;
-
+  width: 100%;
+  left: 0;
+  top: 0;
+  
+  
   > svg {
-    position: fixed;
-    color: white;
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
     cursor: pointer;
     display: none;
+    &:hover {
+      color: var(--colorHover);
+    }
   }
 
-  @media screen and (max-width: 768px) {
-    svg {
+  @media screen and (max-width: 900px) {
+    justify-content: space-between;
+    >h3 {
+      margin: 20px;
+    }
+    >svg {
+      margin-right: 20px;
       display: inherit;
-      
     }
   }
 `;
 
 export const Content = styled.div`
+  justify-content: flex-end;
   display: flex;
-  margin: auto;
-  
+  width: 85%;
   > div {
     align-items: center;
-    padding: 0 40px;
+    margin: 0 20px;
     display: flex;
-    margin: auto;
     >svg {
       margin: 1ch;
     }
   }
 
-  @media screen and (max-width: 768px) {
-      div {
-      display: none;
-    }
+  @media screen and (max-width: 900px) {
+    display: none;
+    margin-right: 10px;
   }
 `;
-// export default Container;
