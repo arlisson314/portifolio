@@ -15,8 +15,10 @@ export const Container = styled.div`
   
   
   > svg {
+    transition: ease-in-out .4s;
     cursor: pointer;
     display: none;
+
     &:hover {
       color: var(--colorHover);
     }
