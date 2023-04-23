@@ -25,7 +25,6 @@ export const Container = styled.div`
       color: var(--colorHover);
     }
   }
-/* 900 = 93  700 = 90* 400 = */
   @keyframes showSidebar {
     from {
       opacity: 0;
@@ -33,7 +32,6 @@ export const Container = styled.div`
     }
     to {
       opacity: 1;
-      width: 100%;
     }
   }
 
@@ -42,7 +40,7 @@ export const Container = styled.div`
       margin-left: 85%;
     }
   }
-`;
+  `;
 
 export const Content = styled.div`
   margin-top: 100px;
